@@ -20,6 +20,16 @@ parallel (
         hoister.buildAndPush '2.2-ubuntu'
       }
     }
+  },
+  '2.3-ubuntu': {
+    stage '2.3-ubuntu'
+    node {
+      checkout scm
+      dir('2.3/ubuntu') {
+        hoister.imageName = image
+        hoister.buildAndPush '2.3-ubuntu'
+      }
+    }
   }
 )
 
