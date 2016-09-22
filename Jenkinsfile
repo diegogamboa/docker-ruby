@@ -63,5 +63,15 @@ parallel (
         hoister.buildAndPush '2.1-ubuntu-firefox'
       }
     }
+  },
+  '2.3-ubuntu-firefox': {
+    stage '2.3-ubuntu-firefox'
+    node {
+      checkout scm
+      dir('2.3/ubuntu/firefox') {
+        hoister.imageName = image
+        hoister.buildAndPush '2.3-ubuntu-firefox'
+      }
+    }
   }
 )
