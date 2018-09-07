@@ -1,4 +1,4 @@
-FROM revinate/ruby:2.3-ubuntu
+FROM registry-v2.revinate.net/common/ruby:2.3-ubuntu
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends build-essential git git-core \

@@ -1,4 +1,4 @@
-FROM revinate/ruby:2.1-ubuntu
+FROM registry-v2.revinate.net/common/ruby:2.1-ubuntu
 
 ENV DOCKER_BUCKET get.docker.com
 ENV DOCKER_VERSION 1.10.3

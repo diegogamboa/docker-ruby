@@ -1,4 +1,4 @@
-FROM revinate/ruby:2.1-ubuntu
+FROM registry-v2.revinate.net/common/ruby:2.1-ubuntu
 
 # add chrome repository
 RUN apt-get update \
