@@ -1,5 +1,7 @@
 def image = 'ruby'
 
+hoister.registry = 'registry-v2.revinate.net/common'
+
 parallel (
   '2.1-ubuntu': {
     stage '2.1-ubuntu'
